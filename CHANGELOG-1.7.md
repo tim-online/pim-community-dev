@@ -4,6 +4,7 @@
 
 - PIM-7336: Fix channel update with "do not convert" values for conversion units
 - PIM-7385: Fix memory leak on purge job command
+- PIM-7366: Fix performance issue related to reloading of selected category children ids on the grid
 
 # 1.7.21 (2018-04-23)
 
