@@ -1,9 +1,9 @@
 # 1.7.x
 
 ## Bug fixes
-
 - PIM-7336: Fix channel update with "do not convert" values for conversion units
 - PIM-7385: Fix memory leak on purge job command
+- PIM-7373: Fix deletion and reinsertion of all attributes relations at family save time
 
 # 1.7.21 (2018-04-23)
 
