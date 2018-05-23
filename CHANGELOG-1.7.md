@@ -2,6 +2,7 @@
 
 ## Bug fixes
 
+- PIM-7373: Fix deletion and reinsertion of all attributes relations at family save time
 - PIM-7400: Fix 'ensure-indexes' timeout command
 
 # 1.7.22 (2018-06-05)
