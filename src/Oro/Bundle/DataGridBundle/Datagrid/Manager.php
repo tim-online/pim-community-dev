@@ -18,6 +18,9 @@ class Manager implements ManagerInterface
     /** @var ContainerInterface */
     private $container;
 
+    /** @var array */
+    private $datagrids;
+
     /**
      * @param ContainerInterface $container
      */
@@ -31,12 +34,13 @@ class Manager implements ManagerInterface
      */
     public function getDatagrid($name)
     {
-        // prepare for work with current grid
-        $this->getRequestParameters()->setRootParameter($name);
-        $config = $this->getConfigurationForGrid($name);
-        $datagrid = $this->getDatagridBuilder()->build($config);
+        if (!isset($this->datagrids[$name])) {
+            $this->getRequestParameters()->setRootParameter($name);
+            $config = $this->getConfigurationForGrid($name);
+            $this->datagrids[$name] = $this->getDatagridBuilder()->build($config);
+        }
 
-        return $datagrid;
+        return $this->datagrids[$name];
     }
 
     /**
