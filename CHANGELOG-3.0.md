@@ -3,6 +3,7 @@
 ## Technical improvement
 
 - TIP-236: Merge Oro User bundle/component into Akeneo User bundle/component 
+- PIM-7371: Improve the performance to display the category tree in the product grid
 
 ## Enhancements
 
