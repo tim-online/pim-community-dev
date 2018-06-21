@@ -7,6 +7,11 @@ Pim\Bundle\CatalogBundle\Entity\Category:
         pim_category_code_uc:
             columns:
                 - code
+
+    indexes:
+        left_idx:
+            columns:
+                - lft
     gedmo:
         tree:
             type: nested
