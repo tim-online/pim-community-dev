@@ -1,3 +1,15 @@
+pim_enrich_product_grid_category_tree_listtree:
+    path: /product-grid/list-tree.{_format}
+    defaults: { _controller: pim_enrich.category_tree.controller.product_grid_category_tree:listTreeAction }
+    requirements:
+        _format: json
+
+pim_enrich_product_grid_category_tree_children:
+    path: /product-grid/children.{_format}
+    defaults: { _controller: pim_enrich.category_tree.controller.product_grid_category_tree:listChildrenAction }
+    requirements:
+        _format: json
+
 pim_enrich_categorytree_listtree:
     path: /list-tree.{_format}
     defaults: { _controller: pim_enrich.controller.category_tree.product:listTreeAction }
