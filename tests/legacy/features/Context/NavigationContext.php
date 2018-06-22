@@ -215,7 +215,7 @@ class NavigationContext extends BaseNavigationContext
     }
 
     /**
-     * @param \Akeneo\Pim\Structure\Component\Model\GroupTypeInterface $groupType
+     * @param GroupTypeInterface $groupType
      *
      * @Given /^I should be on the ("([^"]*)" group type) page$/
      */
